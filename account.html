@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web Asessment 2 - Account</title>
+    <link href="styles.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div id="navigationBar">
+            <ul>
+                <li id="firstNavItem"> <a href="index.html" class="navLink" id="firstNavLink"> The Encroaching Dark </a>
+                </li>
+                <li id="navBarSpace"></li>
+                <li> <a href="index.html" class="navLink"> Game </a>
+                </li>
+                <li> <a href="howToPlay.html" class="navLink" id="howToPlayLink"> How To Play</a>
+                </li>
+                <li> <a href="lore.html" class="navLink" id="loreLink"> Lore </a>
+                </li>
+                <li> <a href="account.html" class="navLink currentPage"> Account </a> </li>
+            </ul>
+        </div>
+    </nav>
+
+    <button id="backButton" class="generalButton">
+        <img src="Assets/backArrow.png" alt="back arrow icon" id="backArrowIcon">
+        <span id="backButtonContents">Back</span>
+    </button>
+    <main id="accountMain">
+        <section id="loginOrCreateSection" class="accountSection">
+            <h1>The Darkness is Encroaching.<br> No one can stop it.</h1>
+            <div id="loginOrCreateButtonSection">
+                <input id="accountPageLoginButton" type="button" value="Login"
+                    class="loginOrCreateButton generalButton">
+                <input id="createAccountButton" type="button" value="Create Account"
+                    class="loginOrCreateButton generalButton">
+            </div>
+        </section>
+
+        <section>
+            <form id="createAccountSection" class="accountSection">
+                <header>
+                    <h1>Create your Account</h1>
+                </header>
+                <div class="formElementContainer" id="firstNameInputContainer">
+                    <label for="firstNameInput">Enter your first name:*</label>
+                    <input name="firstNameInput" type="text" placeholder="Your first name" id="firstNameInput" required>
+                </div>
+
+                <div class="formElementContainer">
+                    <label for="lastNameInput">Enter your last name:*</label>
+                    <input name="lastNameInput" type="text" placeholder="Your last name" id="lastNameInput" required>
+                </div>
+
+                <div class="formElementContainer" id="emailInputContainer">
+                    <label for="emailInput">Enter your email:*</label>
+                    <input name="emailInput" type="email" placeholder="Your email" id="emailInput" required>
+                </div>
+
+                <div class="formElementContainer">
+                    <label for="passwordInput">Enter your password:*</label>
+                    <input name="passwordInput" type="password" placeholder="Your password" id="passwordInput" required>
+                </div>
+
+                <div class="formElementContainer" id="passwordConfirmInputContainer">
+                    <label for="passwordConfirmInput">Confirm your password:*</label>
+                    <input name="passwordConfirmInput" type="password" placeholder="Your password"
+                        id="passwordConfirmInput" required>
+                </div>
+
+                <div class="formElementContainer">
+                    <label for="whatFearInput">What do you fear?*</label>
+                    <input name="whatFearInput" type="text" placeholder="The Dark" id="whatFearInput" required>
+                </div>
+
+                <div class="formElementContainer">
+                    <label for="whatUnceasingInput">What does not stop?*</label>
+                    <input name="whatUnceasingInput" type="text" placeholder="The Dark" id="whatUnceasingInput"
+                        required>
+                </div>
+
+                <div class="formElementContainer">
+                    <label for="whatEndInput">What will be your end?*</label>
+                    <input name="whatEndInput" type="text" placeholder="The Dark" id="whatEndInput" required>
+                </div>
+
+                <fieldset id="afraidRadioButtons" class="formElementContainer">
+                    <legend>Are you already afraid?*</legend>
+                    <label for="afraidYesRadioButton">Yes</label>
+                    <input name="afraidInput" type="radio" value="yes" required id="afraidYesRadioButton">
+                    <label for="afraidNoRadioButton" id="radioButtonLabelNo">No</label>
+                    <input name="afraidInput" type="radio" value="no" required id="afraidNoRadioButton">
+                </fieldset>
+
+                <p class="alignLeft" id="requiredWarning">*required</p>
+
+                <input type="submit" value="Submit" id="submitButton" class="generalButton">
+            </form>
+        </section>
+
+
+        <section id="accountPageSection" class="accountSection">
+            <h1 id="accountPageGreeting">Hello [AccountName]. <br> The Darkness Awaits</h1>
+            <p id="accountPageName"> Name: [Example Name]</p>
+            <p id="accountPageEmail"> Email: [Example Email]</p>
+            <p> The Encroachment continues...</p>
+            <input id="accountPageSectionContinueButton" type="button" value="Continue" class="generalButton">
+        </section>
+
+
+        <section id="loginSection" class="accountSection">
+            <h1>Please enter your details to log in:</h1>
+            <form id="loginDetailsForm">
+                <div class="formElementContainer">
+                    <label for="emailInputLogin">Email:</label>
+                    <input name="emailInputLogin" type="email" placeholder="Your email" id="emailInputLogin" required>
+                </div>
+                <div class="formElementContainer" id="passwordInputLoginContainer">
+                    <label for="passwordInputLogin">Password:</label>
+                    <input name="passwordInputLogin" type="password" placeholder="Your password" id="passwordInputLogin"
+                        required>
+                </div>
+            </form>
+            <input id="loginPageLoginButton" type="button" value="Login" class="loginOrCreateButton generalButton">
+        </section>
+
+
+    </main>
+
+    <!-- <input id="backButton" type="button" value="Back" class=" generalButton"> -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"
+        integrity="sha512-3RlxD1bW34eFKPwj9gUXEWtdSMC59QqIqHnD8O/NoTwSJhgxRizdcFVQhUMFyTp5RwLTDL0Lbcqtl8b7bFAzog=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

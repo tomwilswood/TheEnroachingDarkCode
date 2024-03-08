@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web Asessment 2 - Game</title>
+    <link href="styles.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div id="navigationBar">
+            <ul>
+                <li id="firstNavItem"> <a href="index.html" class="navLink" id="firstNavLink"> The Encroaching Dark </a>
+                </li>
+                <li id="navBarSpace"></li>
+                <li> <a href="index.html" class="navLink currentPage"> Game </a>
+                </li>
+                <li> <a href="howToPlay.html" class="navLink" id="howToPlayLink"> How To Play</a>
+                </li>
+                <li> <a href="lore.html" class="navLink" id="loreLink"> Lore </a>
+                </li>
+                <li> <a href="account.html" class="navLink"> Account </a> </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <h1>Welcome, Stranger. The stars are going out.</h1>
+
+        <div id="canvasHolder">
+            <!--canvas goes here-->
+        </div>
+        <p id="currentScoreDisplay">Current Score:</p>
+        <p id="highScoreDisplay">High Score:</p>
+
+
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"
+        integrity="sha512-3RlxD1bW34eFKPwj9gUXEWtdSMC59QqIqHnD8O/NoTwSJhgxRizdcFVQhUMFyTp5RwLTDL0Lbcqtl8b7bFAzog=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

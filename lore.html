@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web Asessment 2 - Lore</title>
+    <link href="styles.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="loreCanvasHolder">
+        <!--lore canvas goes here-->
+    </div>
+    <nav>
+        <div id="navigationBar">
+            <ul>
+                <li id="firstNavItem"> <a href="index.html" class="navLink" id="firstNavLink"> The Encroaching Dark </a>
+                </li>
+                <li id="navBarSpace"></li>
+                <li> <a href="index.html" class="navLink"> Game </a>
+                </li>
+                <li> <a href="howToPlay.html" class="navLink" id="howToPlayLink"> How To Play</a>
+                </li>
+                <li> <a href="lore.html" class="navLink currentPage" id="loreLink"> Lore </a>
+                </li>
+                <li> <a href="account.html" class="navLink"> Account </a> </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <header id="loreHeader">
+            <h1>The Log of Andrea Serrenson.</h1>
+        </header>
+        <section class="loreSection" id="loreSection1">
+            <div class="loreTitleAndButtonContainer">
+                <div>
+                    <h2>Entry #001</h2>
+                    <p class="loreSubheading"> 13th Span DE31 </p>
+                </div>
+                <span class="loreSectionSpace"></span>
+                <button class="loreAudioButton" id="loreAudioButton1"><img src="Assets/whitePlayButton.png"
+                        alt="playButtonIcon" class="playButtonIcon"> </button>
+            </div>
+
+            <p class="loreSectionGeneralText"> This is Andrea Serrenson reporting from the beginnings of Project
+                Alfheim. We have established an
+                initial group of experts to look into this issue and attempt to provide ideas, at the very least, for
+                counter measures to be put in place. As to what the issue itself is, well. That seems somewhat obvious.
+                Just look up. The stars are going out.
+            </p>
+        </section>
+        <section class="loreSection" id="loreSection2">
+            <div class="loreTitleAndButtonContainer">
+                <div>
+                    <h2>Entry #028</h2>
+                    <p class="loreSubheading"> 4th Span DE32</p>
+                </div>
+                <span class="loreSectionSpace"></span>
+                <button class="loreAudioButton" id="loreAudioButton2"><img src="Assets/whitePlayButton.png"
+                        alt="playButtonIcon" class="playButtonIcon"> </button>
+            </div>
+            <p class="loreSectionGeneralText"> Andrea Serrenson reporting. The project is well underway now, but
+                unfortunately, the darkness is
+                spreading. Fast. Members of the team are beginning to lose hope. Some have even started to vacate their
+                posts. They fear the darkness will overtake all before we have any real chance to do anything to stop
+                it. And I fear they may be right.
+            </p>
+        </section>
+
+        <section class="loreSection" id="loreSection3">
+            <div class="loreTitleAndButtonContainer">
+                <div>
+                    <h2>Entry #103</h2>
+                    <p class="loreSubheading"> 16th Span DE32</p>
+                </div>
+                <span class="loreSectionSpace"></span>
+                <button class="loreAudioButton" id="loreAudioButton3"><img src="Assets/whitePlayButton.png"
+                        alt="playButtonIcon" class="playButtonIcon"> </button>
+            </div>
+
+            <p class="loreSectionGeneralText"> This is Andrea. I'm the last one left now. Everyone else has given up.
+                The darkness covers nearly
+                everything. All attempts to slow it down have proven fruitless, in the end. It just keeps coming. We
+                have, one final attempt now. Our final creation of our small team of experts. Though, as I said. They've
+                all left now. I had to finish it off myself. They all cursed me for a fool. Said I should spend my final
+                moments better than uselessly flailing against something so great I could never hope to stop it.
+                And they may be right. I don't deny them that. But, you see, I have ever been a scientist. And I have
+                one, final theory. That when all things seem the darkest. That is when light matters most.
+            </p>
+        </section>
+
+        <!-- <section class="loreSection" id="loreSection3">
+            <h2> Example title</h2>
+            <p class="loreSubheading"> example subheading</p>
+            <p> Example text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut pharetra sit amet aliquam id diam maecenas ultricies. Mauris vitae
+                ultricies leo integer.
+                Id diam maecenas ultricies mi eget. Enim praesent elementum facilisis leo vel fringilla est. Tellus id
+                interdum velit laoreet. Tincidunt vitae semper quis lectus nulla at volutpat. Lectus nulla at volutpat
+                diam ut venenatis tellus in. Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. Ut
+                enim
+                blandit volutpat maecenas volutpat blandit. Faucibus purus in massa tempor. Platea dictumst vestibulum
+                rhoncus est pellentesque elit ullamcorper dignissim cras. Tempus urna et pharetra pharetra massa massa
+                ultricies mi. Proin fermentum leo vel orci porta non pulvinar. Ut tellus elementum sagittis vitae et
+                leo. Tellus at urna condimentum mattis pellentesque id nibh. Pretium viverra suspendisse potenti nullam
+                ac tortor
+                vitae. Commodo odio aenean sed adipiscing diam donec adipiscing.</p>
+        </section> -->
+
+        <div id="loreLockedBar">
+            <img src="Assets/lock.png" alt="lock icon" id="loreLockImage">
+            <p id="lockedBarText"> You haven't earned enough points to unlock this yet. <br>
+                High score needed:1</p>
+        </div>
+
+
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"
+        integrity="sha512-3RlxD1bW34eFKPwj9gUXEWtdSMC59QqIqHnD8O/NoTwSJhgxRizdcFVQhUMFyTp5RwLTDL0Lbcqtl8b7bFAzog=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

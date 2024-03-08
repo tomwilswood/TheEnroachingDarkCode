@@ -1,0 +1,347 @@
+body {
+    margin: 0;
+    background-color: rgb(241, 228, 202);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main {
+    margin-left: 20%;
+    margin-right: 20%;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*general display flex*/
+main,
+nav ul,
+#loreLockedBar,
+.loreTitleAndButtonContainer,
+#loginOrCreateButtonSection,
+.formElementContainer,
+#createAccountSection,
+#loginSection,
+#accountPageSection {
+    display: flex;
+}
+
+
+/*start of navigation*/
+
+nav {
+    background-color: #000000;
+}
+
+.navLink {
+    text-decoration: none;
+    color: #c3c0c0;
+    font-size: 1.5em;
+    padding-top: 2em;
+    padding-bottom: 1.4em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.navLink:hover {
+    color: antiquewhite;
+    text-decoration: underline;
+}
+
+#howToPlayLink {
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+}
+
+nav ul {
+    margin-top: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+    width: 10%;
+}
+
+#firstNavItem {
+    text-align: left;
+    width: 18%;
+}
+
+#firstNavLink {
+    padding-left: 1em;
+}
+
+#navBarSpace {
+    width: 40%;
+}
+
+.currentPage {
+    text-decoration: underline;
+}
+
+
+
+/*end of navigation */
+
+
+
+
+/*start of how to play*/
+
+.howToPlaySection {
+    font-size: 1.3em;
+    margin-top: 0em;
+    text-align: center;
+}
+
+.howToPlayImage {
+    width: 60%;
+}
+
+/*end of how to play*/
+
+
+
+
+/*start of lore */
+
+#loreHeader {
+    margin-left: -55%;
+}
+
+.loreSection {
+    background-color: rgb(236, 213, 181);
+}
+
+.loreSectionGeneralText {
+    font-size: 1.2em;
+}
+
+section,
+#loginOrCreateButtonSection {
+    padding-left: 1em;
+    padding-right: 1em;
+
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+h2 {
+    margin-bottom: 0em;
+    margin-top: 0.4em;
+}
+
+.loreSubheading {
+    margin-top: 0em;
+}
+
+#loreLockedBar {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+    background-color: rgb(236, 213, 181);
+    padding-left: 33%;
+    padding-right: 33%;
+    border: #000000;
+    border-width: 0.2em;
+    border-style: solid;
+    border-right-width: 0;
+    border-left-width: 0;
+
+}
+
+#loreLockImage {
+    padding-top: 0.8em;
+    height: 10%;
+    width: 10%;
+}
+
+.loreAudioButton {
+    background-color: black;
+    border-radius: 100px;
+    width: 4em;
+    height: 4em;
+    margin-top: 0.5em;
+}
+
+.loreSectionSpace {
+    width: 83%;
+}
+
+.playButtonIcon {
+    width: 2.4em;
+    padding-left: 0.5em;
+}
+
+#loreBlackCircle {
+    position: absolute;
+    z-index: 1;
+    width: 100.1em;
+
+}
+
+#loreCanvasHolder {
+    position: absolute;
+    z-index: -1;
+    height: 1080px;
+}
+
+/*end of lore*/
+
+
+
+
+
+
+
+/*start of account*/
+
+#accountMain {
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+
+
+#loginOrCreateSection {
+    text-align: center;
+    margin-top: 15em;
+}
+
+#loginOrCreateButtonSection {
+    justify-content: space-evenly;
+}
+
+.loginOrCreateButton {
+    width: 45%;
+    height: 3em;
+}
+
+.alignLeft {
+    align-self: flex-start;
+    padding-left: 2em;
+}
+
+
+
+.formElementContainer {
+    margin-top: 1em;
+    justify-content: space-between;
+    width: 30em;
+}
+
+#afraidRadioButtons {
+    justify-content: flex-start;
+}
+
+#radioButtonLabelNo {
+    padding-left: 5em;
+}
+
+.generalButton {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+}
+
+#submitButton {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    width: 8em;
+    height: 2em;
+
+}
+
+.accountSection {
+    background-color: rgb(245, 215, 176);
+    border: #000000;
+    border-style: double;
+
+}
+
+#createAccountSection {
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#loginSection {
+    padding-bottom: 2em;
+    flex-direction: column;
+}
+
+#loginDetailsForm {
+    margin-top: 0em;
+    padding-bottom: 1em;
+}
+
+#loginPageLoginButton {
+    align-self: center;
+}
+
+
+#backButton {
+    margin-left: 1.5em;
+    width: 10%;
+    font-size: 1.5em;
+}
+
+#backArrowIcon {
+    width: 6%;
+}
+
+#backButtonContents {
+    display: inline;
+}
+
+#accountPageSection {
+    flex-direction: column;
+}
+
+#accountPageSectionContinueButton {
+    margin-bottom: 1em;
+    height: 2em;
+}
+
+.accountCreationErrorMessage {
+    color: rgb(207, 6, 6);
+    margin-top: 0.3em;
+    margin-bottom: 0em;
+    align-self: flex-start;
+    padding-left: 2em;
+
+}
+
+#accountPageGreeting {
+    text-align: center;
+}
+
+/*end of account*/
+
+#loreNotifier {
+    animation: flash 0.5s infinite linear;
+    color: rgb(255, 215, 0);
+    /* text-decoration: none; */
+}
+
+@keyframes flash {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #loreNotifier {
+        animation: none;
+    }
+}
